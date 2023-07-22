@@ -629,10 +629,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.82
-  m_Height: 2.95
+  m_Radius: 1
+  m_Height: 2.8
   m_Direction: 1
-  m_Center: {x: 0, y: 1.4, z: 0}
+  m_Center: {x: 0, y: 1.38, z: 0}
 --- !u!95 &896814103254294559
 Animator:
   serializedVersion: 5
@@ -666,6 +666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3c597085cecfe49ac89701a9df0a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jogador: {fileID: 0}
+  velicidade: 5
 --- !u!54 &6796668851623926614
 Rigidbody:
   m_ObjectHideFlags: 0

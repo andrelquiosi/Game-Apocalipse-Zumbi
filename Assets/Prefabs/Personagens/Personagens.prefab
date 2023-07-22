@@ -2651,10 +2651,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.82
-  m_Height: 2.95
+  m_Radius: 1
+  m_Height: 2.9191554
   m_Direction: 1
-  m_Center: {x: 0, y: 1.45, z: 0}
+  m_Center: {x: 0, y: 1.4345776, z: 0}
 --- !u!54 &2149834388138660017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2680,7 +2680,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!1 &1938851689004064
 GameObject:
