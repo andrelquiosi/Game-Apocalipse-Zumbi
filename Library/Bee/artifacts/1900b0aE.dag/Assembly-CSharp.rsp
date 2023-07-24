@@ -329,6 +329,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scrypts/Bala.cs"
+"Assets/Scrypts/ControlaArma.cs"
 "Assets/Scrypts/ControlaCamera.cs"
 "Assets/Scrypts/ControlaInimigo.cs"
 "Assets/Scrypts/ControlarJogador.cs"

@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scrypts\ControlaCamera.cs" />
+     <Compile Include="Assets\Scrypts\ControlaArma.cs" />
      <Compile Include="Assets\Scrypts\ControlarJogador.cs" />
      <Compile Include="Assets\Scrypts\ControlaInimigo.cs" />
+     <Compile Include="Assets\Scrypts\Bala.cs" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes_Zumbi.txt" />
     <Reference Include="UnityEngine">
