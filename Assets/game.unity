@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1553518991638287074, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
+      propertyPath: mascaraChao.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5137409969497866306, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: bala
       value: 
@@ -206,6 +210,10 @@ PrefabInstance:
     - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_Name
       value: Rua_Canto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_RootOrder
@@ -530,6 +538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Canto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -804,6 +816,10 @@ PrefabInstance:
     - target: {fileID: 4379403211444961195, guid: 4550ec36040746b4d8943f0e28244d8f, type: 3}
       propertyPath: m_Name
       value: Hotel_Estacionamento_Destruido
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379403211444961195, guid: 4550ec36040746b4d8943f0e28244d8f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4379403211445248907, guid: 4550ec36040746b4d8943f0e28244d8f, type: 3}
       propertyPath: m_RootOrder
