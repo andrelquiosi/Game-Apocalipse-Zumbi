@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
- public float velocidade = 20;
+    public float velocidade = 20;
     // Update is called once per frame
     void FixedUpdate()
     {
         GetComponent<Rigidbody>()
-        .MovePosition(GetComponent<Rigidbody>().position + 
+        .MovePosition(GetComponent<Rigidbody>().position +
         transform.forward * velocidade * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider objetoDeColisao)
+    {
+
+        if (objetoDeColisao.tag == "Inimigo")
+        {
+            Destroy(objetoDeColisao.gameObject);
+        }
+
+        Destroy(gameObject);
     }
 }
