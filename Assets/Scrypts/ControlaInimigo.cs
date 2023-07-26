@@ -41,4 +41,11 @@ public class ControlaInimigo : MonoBehaviour
             GetComponent<Animator>().SetBool("Atacando", true);
         }
     }
+    void AtacaJogador()
+    {
+
+        Time.timeScale = 0;
+        jogador.GetComponent<ControlarJogador>().textoGameOver.SetActive(true);
+        jogador.GetComponent<ControlarJogador>().vivo = false;
+    }
 }

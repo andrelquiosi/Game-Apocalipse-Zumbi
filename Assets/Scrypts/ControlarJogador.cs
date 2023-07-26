@@ -1,12 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ControlarJogador : MonoBehaviour
 {
     public float velocidade = 10;
     Vector3 direcao;
     public LayerMask mascaraChao;
+    public GameObject textoGameOver;
+    public bool vivo = true;
+
+    private void Start() {
+        Time.timeScale =1;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +29,15 @@ public class NewBehaviourScript : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetBool("Movendo", false);
+        }
+
+
+        if (vivo == false)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                SceneManager.LoadScene("game");
+            }
         }
 
     }
@@ -49,5 +64,6 @@ public class NewBehaviourScript : MonoBehaviour
             GetComponent<Rigidbody>().MoveRotation(novaRotacao);
 
         }
+
     }
 }
