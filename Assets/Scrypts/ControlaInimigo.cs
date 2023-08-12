@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class ControlaInimigo : MonoBehaviour
 {
-    public GameObject jogador;
-    public float velicidade = 5;
+    public GameObject Jogador;
+    public float Velocidade = 5;
+    private Rigidbody rigidbodyInimigo;
+    private Animator animatorInimigo;
     // Start is called before the first frame update
     void Start()
     {
-        jogador = GameObject.FindWithTag("Jogador");
-        int geraTipoZumbi = Random.Range(1,28);
+        Jogador = GameObject.FindWithTag("Jogador");
+        int geraTipoZumbi = Random.Range(1, 28);
         transform.GetChild(geraTipoZumbi).gameObject.SetActive(true);
+        rigidbodyInimigo = GetComponent<Rigidbody>();
+        animatorInimigo = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,30 +28,30 @@ public class ControlaInimigo : MonoBehaviour
     {
 
 
-        float distancia = Vector3.Distance(transform.position, jogador.transform.position);
-        Vector3 direcao = jogador.transform.position - transform.position;
+        float distancia = Vector3.Distance(transform.position, Jogador.transform.position);
+        Vector3 direcao = Jogador.transform.position - transform.position;
 
         Quaternion novaRotacao = Quaternion.LookRotation(direcao);
-        GetComponent<Rigidbody>().MoveRotation(novaRotacao);
+        rigidbodyInimigo.MoveRotation(novaRotacao);
 
         if (distancia > 2.5)
         {
 
-            GetComponent<Rigidbody>()
-            .MovePosition(GetComponent<Rigidbody>()
-            .position + direcao.normalized * velicidade * Time.deltaTime);
-            GetComponent<Animator>().SetBool("Atacando", false);
+            rigidbodyInimigo
+            .MovePosition(rigidbodyInimigo
+            .position + direcao.normalized * Velocidade * Time.deltaTime);
+            animatorInimigo.SetBool("Atacando", false);
         }
         else
         {
-            GetComponent<Animator>().SetBool("Atacando", true);
+            animatorInimigo.SetBool("Atacando", true);
         }
     }
     void AtacaJogador()
     {
 
         Time.timeScale = 0;
-        jogador.GetComponent<ControlarJogador>().textoGameOver.SetActive(true);
-        jogador.GetComponent<ControlarJogador>().vivo = false;
+        Jogador.GetComponent<ControlarJogador>().TextoGameOver.SetActive(true);
+        Jogador.GetComponent<ControlarJogador>().Vivo = false;
     }
 }

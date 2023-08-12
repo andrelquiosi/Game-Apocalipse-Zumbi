@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GeradorZumbis : MonoBehaviour
 {
 
-    public GameObject zumbi;
+    public GameObject Zumbi;
     private float contadorTempo = 0;
-    public float tempoGerarZumbi = 1;
+    public float TempoGerarZumbi = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +19,9 @@ public class NewBehaviourScript : MonoBehaviour
     {
         contadorTempo += Time.deltaTime;
 
-        if (contadorTempo >= tempoGerarZumbi)
+        if (contadorTempo >= TempoGerarZumbi)
         {
-            Instantiate(zumbi, transform.position, transform.rotation);
+            Instantiate(Zumbi, transform.position, transform.rotation);
             contadorTempo = 0;
         }
     }
